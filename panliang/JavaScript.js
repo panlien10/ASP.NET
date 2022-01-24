@@ -1,0 +1,1 @@
+﻿<script language='javascript' type='text/javascript'> alert('注册成功')")

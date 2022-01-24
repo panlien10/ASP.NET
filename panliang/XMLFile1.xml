@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements xmlns="http://schemas.microsoft.com/AspNet/AdRotator-Advertisement-File-1.2">
+	<Ad xmlns="">
+		<ImageUrl>images/feizhu.png</ImageUrl>
+		<AlternateText>飞猪旅行</AlternateText>
+		<Height>200</Height>
+		<Width>300</Width>
+		<NavigateUrl>https://www.fliggy.com</NavigateUrl>
+		<Impressions>40</Impressions>
+		<Keyword>旅行</Keyword>
+	</Ad>
+	<Ad xmlns="">
+		<ImageUrl>images/jdong.jpg</ImageUrl>
+		<AlternateText>京东购物</AlternateText>
+		<Height>200</Height>
+		<Width>300</Width>
+		<NavigateUrl>https://www.jd.com</NavigateUrl>
+		<Impressions>60</Impressions>
+		<Keyword>购物</Keyword>
+	</Ad>
+</Advertisements>

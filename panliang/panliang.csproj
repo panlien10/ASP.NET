@@ -1,0 +1,311 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73727C47-3577-46EF-AC72-EEC39F533714}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>panliang</RootNamespace>
+    <AssemblyName>panliang</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44357</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.0\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.0\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Fabric.Plugin, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.0\MySql.Fabric.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.0\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3.aspx" />
+    <Content Include="cartshow.aspx" />
+    <Content Include="cart\cartshop.aspx" />
+    <Content Include="cart\fruit.aspx" />
+    <Content Include="cart\kbai.png" />
+    <Content Include="cart\li.jpg" />
+    <Content Include="cart\LIZHI.JPG" />
+    <Content Include="cart\.JPG" />
+    <Content Include="cart\juzhi.JPG" />
+    <Content Include="cart\vegetable.aspx" />
+    <Content Include="cart\yintao.jpg" />
+    <Content Include="cart\菠菜.jpg" />
+    <Content Include="cart\香蕉.jpg" />
+    <Content Include="css\main1.css" />
+    <Content Include="Global.asax" />
+    <Content Include="imageswork1.aspx" />
+    <Content Include="images\4.png" />
+    <Content Include="images\5.png" />
+    <Content Include="images\apple.JPG" />
+    <Content Include="images\caomei.JPG" />
+    <Content Include="images\people\people1.PNG" />
+    <Content Include="images\yintao.JPG" />
+    <Content Include="images\putao.JPG" />
+    <Content Include="images\jdong.jpg" />
+    <Content Include="images\feizhu.png" />
+    <Content Include="images\红.png" />
+    <Content Include="images\蓝.png" />
+    <Content Include="images\黄.png" />
+    <Content Include="image\四叶草.png" />
+    <Content Include="image\baixiangguo.png" />
+    <Content Include="image\backround.png" />
+    <Content Include="image\叶子.JPG" />
+    <Content Include="image\橘子投.png" />
+    <Content Include="image\boluo.png" />
+    <Content Include="image\caomei.png" />
+    <Content Include="image\2.JPG" />
+    <Content Include="image\juzhi.JPG" />
+    <Content Include="image\li.jpg" />
+    <Content Include="image\LIZHI.JPG" />
+    <Content Include="image\manguo.png" />
+    <Content Include="image\naicao.png" />
+    <Content Include="image\nihoutao.png" />
+    <Content Include="image\putao.png" />
+    <Content Include="image\yintao.jpg" />
+    <Content Include="image\详情图片\2.JPG" />
+    <Content Include="image\详情图片\3.JPG" />
+    <Content Include="image\详情图片\4.JPG" />
+    <Content Include="image\详情图片\1.JPG" />
+    <Content Include="image\详情图片\xiaojiao1.JPG" />
+    <Content Include="image\详情图片\橘子.JPG" />
+    <Content Include="image\香蕉.jpg" />
+    <Content Include="JavaScript.js" />
+    <Content Include="cart\payup.aspx" />
+    <Content Include="car.aspx" />
+    <Content Include="order.aspx" />
+    <Content Include="order1.aspx" />
+    <Content Include="people2.aspx" />
+    <Content Include="peoplelogin.aspx" />
+    <Content Include="show.aspx" />
+    <Content Include="userindex.aspx" />
+    <Content Include="usermain2.aspx" />
+    <Content Include="xianqinye.aspx" />
+    <Content Include="XMLFile1.xml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\image2.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\2.png" />
+    <Content Include="images\3.png" />
+    <Content Include="images\1.png" />
+    <Content Include="images\点赞.png" />
+    <Content Include="userlogin.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3.aspx.cs">
+      <DependentUpon>3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3.aspx.designer.cs">
+      <DependentUpon>3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cartshow.aspx.cs">
+      <DependentUpon>cartshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cartshow.aspx.designer.cs">
+      <DependentUpon>cartshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart\cartshop.aspx.cs">
+      <DependentUpon>cartshop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart\cartshop.aspx.designer.cs">
+      <DependentUpon>cartshop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart\fruit.aspx.cs">
+      <DependentUpon>fruit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart\fruit.aspx.designer.cs">
+      <DependentUpon>fruit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart\vegetable.aspx.cs">
+      <DependentUpon>vegetable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart\vegetable.aspx.designer.cs">
+      <DependentUpon>vegetable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="imageswork1.aspx.cs">
+      <DependentUpon>imageswork1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="imageswork1.aspx.designer.cs">
+      <DependentUpon>imageswork1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart\payup.aspx.cs">
+      <DependentUpon>payup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart\payup.aspx.designer.cs">
+      <DependentUpon>payup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order.aspx.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order.aspx.designer.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order1.aspx.cs">
+      <DependentUpon>order1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order1.aspx.designer.cs">
+      <DependentUpon>order1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="people2.aspx.cs">
+      <DependentUpon>people2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="people2.aspx.designer.cs">
+      <DependentUpon>people2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="peoplelogin.aspx.cs">
+      <DependentUpon>peoplelogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peoplelogin.aspx.designer.cs">
+      <DependentUpon>peoplelogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="car.aspx.cs">
+      <DependentUpon>car.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="car.aspx.designer.cs">
+      <DependentUpon>car.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="show.aspx.cs">
+      <DependentUpon>show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="show.aspx.designer.cs">
+      <DependentUpon>show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userindex.aspx.cs">
+      <DependentUpon>userindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userindex.aspx.designer.cs">
+      <DependentUpon>userindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userlogin.aspx.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userlogin.aspx.designer.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usermain2.aspx.cs">
+      <DependentUpon>usermain2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usermain2.aspx.designer.cs">
+      <DependentUpon>usermain2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xianqinye.aspx.cs">
+      <DependentUpon>xianqinye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xianqinye.aspx.designer.cs">
+      <DependentUpon>xianqinye.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50469</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44357/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

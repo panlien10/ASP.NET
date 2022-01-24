@@ -1,0 +1,23 @@
+﻿.wrapper{
+    width:100%;
+    height:200px
+}
+    .wrapper .header {
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient(90deg,#DBDB70,#7093DB);
+        padding-top: 15px;
+    }
+        .wrapper .header h1 {
+            text-align: center;
+        }
+
+.wrapper .oder1 {
+    
+    
+    background-color:rebeccapurple;
+}
+.wrapper .header .showp{
+    text-align:center;
+    color:red;
+}
